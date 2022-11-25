@@ -12,6 +12,7 @@ a {
 
 main a {
   color: black;
+  transition: 0.1s;
 }
 main a:hover {
   color: red;
@@ -102,6 +103,7 @@ footer p {
 }
 footer a {
   color: white;
+  transition: 0.2s;
 }
 footer a:hover {
   color: white;

@@ -11,6 +11,7 @@ footer {
 
     a {
         color: $color-secundario;
+        transition: 0.2s;
 
         &:hover {
             color: $color-secundario;

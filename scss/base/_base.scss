@@ -13,6 +13,7 @@ a {
 main {
     a {
         color: $color-negro;
+        transition: 0.1s;
 
         &:hover {
             color: $color-primario;
