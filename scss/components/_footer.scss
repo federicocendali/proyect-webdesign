@@ -1,0 +1,54 @@
+footer {
+    background: $background-headerfooter;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+
+    p {
+        color: $color-secundario;
+    }
+
+    a {
+        color: $color-secundario;
+
+        &:hover {
+            color: $color-secundario;
+        }
+
+        &:active {
+            color: $color-secundario;
+        }
+    }
+}
+
+.footer__logo {
+    height: 100px;
+    width: 223px;
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+// desktop
+
+@media screen and (min-width: 768px) {
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-height: 200px;
+        align-items: center;
+
+        a:hover {
+            color: $color-primario;
+        }
+
+        a:active {
+            color: $color-secundario;
+            font-weight: bold;
+        }
+    }
+}

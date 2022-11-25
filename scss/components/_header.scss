@@ -1,0 +1,67 @@
+.header__logo {
+    height: 50px;
+    width: 120px;
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.navbar {
+    background: $background-headerfooter;
+}
+
+.nav-link {
+    color: $color-secundario;
+
+    &:hover {
+        color: $color-primario;
+    }
+
+    &:active {
+        color: $color-secundario;
+        font-weight: bold;
+    }
+}
+
+.navbar-nav {
+    .nav-link.active {
+        color: $color-secundario;
+        font-weight: bold;
+
+        &:hover {
+            color: $color-primario;
+        }
+
+        &:active {
+            color: $color-secundario;
+            font-weight: bold;
+        }
+    }
+}
+
+.btn-outline-dark {
+    border: none;
+    background-color: $btn-dark;
+    color: $color-secundario;
+
+    &:hover {
+        background-color: $btn-hover;
+    }
+}
+
+.navbar-expand-lg {
+    .navbar-collapse {
+        gap: 50px;
+    }
+}
+
+.bi-three-dots {
+    color: $color-icon;
+    font-size: 1.7rem;
+}
+
+.navbar-toggler {
+    border: 0;
+}

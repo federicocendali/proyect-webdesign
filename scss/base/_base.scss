@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Mukta', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    a {
+        color: $color-negro;
+
+        &:hover {
+            color: $color-primario;
+            text-decoration: underline;
+        }
+    }
+}
