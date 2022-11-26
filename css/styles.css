@@ -137,6 +137,43 @@ footer a:active {
     font-weight: bold;
   }
 }
+.b-galeria {
+  margin: 10px 20px;
+  box-shadow: 8px 8px 15px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+  margin: 0px 5px;
+}
+
+.foto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .b-galeria {
+    margin: 25px 50px;
+    box-shadow: 15px 15px 25px;
+  }
+  .grid-item {
+    transition: 0.1s;
+  }
+  .grid-item:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 10px 20px;
+  }
+  .item1 {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+}
 .ratio {
   width: 100%;
   height: 40vh;
