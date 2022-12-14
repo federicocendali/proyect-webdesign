@@ -1,0 +1,32 @@
+// desktop
+
+@media screen and (min-width: 768px) {
+    .animacion {
+        filter: contrast(20);
+        background-color: $color-secundario;
+        text-align: center;
+
+        .animacion--item {
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            background: $color-primario;
+            margin: 25px;
+            border-radius: 50%;
+            filter: blur(10px);
+
+            &:first-child {
+                animation: trasladar 3.5s alternate infinite;
+            }
+        }
+    }
+
+    @keyframes trasladar {
+        0% {
+            transform: translate(0);
+        }
+        100% {
+            transform: translate(180px)
+        }
+    }
+}

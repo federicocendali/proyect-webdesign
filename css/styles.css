@@ -192,5 +192,32 @@ footer a:active {
     display: table;
   }
 }
+@media screen and (min-width: 768px) {
+  .animacion {
+    filter: contrast(20);
+    background-color: white;
+    text-align: center;
+  }
+  .animacion .animacion--item {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background: red;
+    margin: 25px;
+    border-radius: 50%;
+    filter: blur(10px);
+  }
+  .animacion .animacion--item:first-child {
+    animation: trasladar 3.5s alternate infinite;
+  }
+  @keyframes trasladar {
+    0% {
+      transform: translate(0);
+    }
+    100% {
+      transform: translate(180px);
+    }
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
